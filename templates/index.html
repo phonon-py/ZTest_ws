@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion API Integration</title>
+  <!-- Bootstrap CSSのリンク -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- カスタムCSSのリンク -->
+  <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">ChatGPTの会話をNotionに送信する</h2>
+    <form action="/send" method="post">
+      <div class="form-group">
+        <textarea name="markdown_content" rows="10" class="form-control" placeholder="ここにmarkdown_contentの内容を貼り付ける"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+  </div>
+  <!-- BootstrapのJavaScriptと依存関係 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

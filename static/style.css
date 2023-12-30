@@ -1,0 +1,11 @@
+/* static/styles.css */
+body {
+    padding-top: 20px;
+  }
+  .container {
+    max-width: 600px;
+  }
+  textarea {
+    width: 100%;
+  }
+  
