@@ -3,3 +3,6 @@ config.py
 __pycache__/
 *.pyc
 data.pickle
+
+# dirs
+New_Data_Analysis_Textbook
